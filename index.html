@@ -45,6 +45,14 @@
             if(e.keyCode == 123 || (e.ctrlKey && (e.keyCode == 85 || e.keyCode == 73))) {
                 return false;
             }
+            
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                return false;
+            }
+
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 67) {
+                return false;
+            }
         };
     </script>
 </body>
