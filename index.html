@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود به حساب کاربری</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <!-- حلقه دایره‌ای -->
+        <div class="ring">
+            <!-- ایجاد ۳۶ خط -->
+            <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+
+            <!-- فرم لاگین اکنون داخل ring قرار دارد تا دقیقاً در مرکز باشد -->
+            <div class="login-box">
+                <h2>ورود به حساب کاربری</h2>
+                <form>
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label>نام کاربری یا ایمیل</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" required>
+                        <label>رمز عبور</label>
+                    </div>
+                    <a href="#" class="forgot-pass">رمز عبور را فراموش کرده‌اید؟</a>
+                    <button type="submit" class="login-btn">ورود</button>
+                    <p class="signup-text">عضو شوید <a href="#">ثبت‌نام</a></p>
+                </form>
+            </div>
+        </div> <!-- پایان ring -->
+    </div> <!-- پایان main-container -->
+
+    <script>
+        const bars = document.querySelectorAll('.bar');
+        bars.forEach((bar, index) => {
+            bar.style.animationDelay = (index * 0.08) + 's';
+        });
+    </script>
+</body>
+</html>
+
